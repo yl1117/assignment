@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .card {
+        border: 3px solid black;
+        padding: 25px;
+        margin: 3px;
+    }
+</style>
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h2>About APU Go Karting Club</h2>
+            <p><i>Driven by Passion, Powered by Teamwork</i></p>
+        </div>
+    </section>
+<section class="about-intro">
+    <div class="about-image">
+        <h1>About Us</h1>
+        <img src="images/aboutus.jpg" alt="About Us Image">
+    </div>
+    <div class="about-content">
+        
+        <ul>
+            <li><h3>The Apu Go-Karting Club is a student club that brings together students who are passionate about go kart racing and motorsports.</h3></li>
+            <li><h3>We welcome all the students of all skill levels, whether they are beginners or experienced drivers.</h3></li>
+    <li><h3>Our club provide a friendly environent where members can learn, improve and enjoy the excitement of karting together.</h3></li>
+</ul>
+</div>
+</section>
+<br>
+<br>
+
+<section class="mission-vision">
+<div class="info-card">
+<h2>Our Mission</h2>
+<ul>
+    <li><p>Our mission is to promote interest in go kart racing and motorsports among APU students.</p></li>
+    <li><p>We provide opportunities for members to enhance their driving skills.</p></li>
+    <li><p>We also organise fun, safe and exciting karting activities.</p></li>
+    <li><p>We  are going to encourage teamwork, friendship and sportsmanship.</p></li>
+</ul>
+</div>
+<br>
+<br>
+
+<div class="info-card">
+<h2>Our Vision</h2>
+<ul>
+    <li><p>Our vision is to become one of the most active and inspiring student clubs at APU by creating a community where everyone can enjoy karting, develop their skills and build lasting friendships.</p></li>
+</ul>
+</div>
+<br>
+<br>
+</section>
+
+<section class="objectives">
+    <h2>Objectives</h2>
+    <div class="objective-container">
+        <div class="objective-card">
+        <h3>Driving Skills</h3>
+        <p>Help members improve their driving skills and confidence.</p>
+    </div>
+    <div class="objective-card">
+        <h3>Teamwork</h2>
+        <p>Encourage teamwork, sportsmanship and friendship among members.</p>
+    </div>
+    <div class="objective-card">
+        <h3>Events</h3>
+        <p>Organise fun, safe and exciting karting events and competitions.</p> 
+        </div>
+    <div class="objective-card">
+        <h3>Friendship</h3>
+        <p>Build lasting friendships through club activities and events.</p>
+
+</div>
+</section>
+<br>
+<br>
+
+<section class="history">
+<div class="card">
+<h2>Club History</h2>
+<ul>
+    <li><p>The Apu Go-Karting Club was established to bring together studenst who share an interest in go kart racing and motorsports.</p></li>
+    <li><p>The club welcomes students of all experience levels and provides opportunities to learn, improve and enjoy karting through various activities and events.</p></li>
+</ul>
+</div>
+</section>
+<script>
+    // Load the navbar.html file into the #navbar div
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+</script>
+</body>
+</html>

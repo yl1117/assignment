@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Join APU Go Karting Club</h1>
+    <h2>Become a member of the APU Go-Karting Club!!! Fill in the form below to join us and enjoy exciting karting.</h2>
+
+<div class="form-container">
+<form>
+    <label class="label">Full name:</label>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+
+    <label class="label">Student ID:</label>
+    <br>   
+    <input type="text">
+    <br>
+    <br>
+
+    <label class="label">Email Address:</label>
+    <br>
+    <input type="email">
+    <br>
+    <br>
+
+    <label class="label">Phone Number:</label>
+    <br>    
+    <input type="tel">
+    <br>
+    <br>
+
+    <label class="label">Programme:</label>
+    <select>
+        <option>Software Engineering</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+    </select>
+    <br>
+    <br>
+
+    <label class="label">Experience Level:</label>
+    <br>
+    <select name="experience_level" required>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+    </select>
+    <br>
+    <br>
+
+    <label class="label">Year of Study:</label>
+    <br>
+    <input type="radio" name="year"> Year 1
+    <br>
+    <input type="radio" name="year"> Year 2
+    <br>
+    <input type="radio" name="year"> Year 3
+    <br>
+    <input type="radio" name="year"> Year 4
+    <br>
+    <br>
+
+    <label class="label">Why do you want to join our club?</label>
+    <br>
+    <textarea rows="5" cols="40"></textarea>
+    <br>
+    <br>
+
+    <input type="checkbox" name="terms">
+    <label for="rules">I agree to the club rules.</label>
+    <br>
+    <br>
+
+
+    <input type="button" value="Submit" onclick="submitForm()">
+    <input type="button" value="Reset" onclick="resetForm()">
+    
+</form>
+</div>
+
+<script>
+function submitForm() {
+    alert("Thank you for joining the APU Go Karting Club!");
+    window.location.href = "index.html";
+}
+
+function resetForm() {
+    window.location.href = "joinus.html";
+}
+</script>
+
+</body>
+</html>
