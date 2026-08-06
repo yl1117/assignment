@@ -1,0 +1,319 @@
+/* ==========================================
+   EVENTS PAGE
+========================================== */
+
+body{
+    background:#f5f1e8;
+}
+
+/* Event Card */
+
+.event{
+    width:85%;
+    max-width:900px;
+    margin:35px auto;
+    padding:30px;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.event:hover{
+    transform:translateY(-5px);
+}
+
+/* Title */
+
+.event h2{
+    margin-top:0;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:28px;
+    color:#4e1717;
+}
+
+/* Every p becomes a box */
+
+.event p{
+    margin:12px 0;
+    padding:14px 18px;
+    background:#faf6ef;
+    border-left:6px solid #721c1c;
+    border-radius:6px;
+    font-size:17px;
+    line-height:1.6;
+}
+
+/* Different Event Colours */
+
+.event.blue{
+    border-top:8px solid #1e5f99;
+}
+
+.event.red{
+    border-top:8px solid #b52a2a;
+}
+
+.event.gold{
+    border-top:8px solid #d49b12;
+}
+
+.event.orange{
+    border-top:8px solid #e67e22;
+}
+
+/* Bold Text */
+
+.event b,
+.event strong{
+    color:#721c1c;
+}
+
+/* Home Button */
+
+.home-link{
+    display:inline-block;
+    margin:20px;
+    padding:12px 25px;
+    background:#721c1c;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.home-link:hover{
+    background:#9d2828;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .event{
+        width:92%;
+        padding:20px;
+    }
+
+    .event h2{
+        font-size:22px;
+    }
+
+}
+
+body {
+    margin: 0;
+    background-color: #f5f1e8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+}
+
+/* Calendar heading area */
+
+.calendar-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.calendar-container h2 {
+    margin-top: 0;
+    color: #4e1717;
+}
+
+.calendar-container select {
+    margin-left: 8px;
+    padding: 8px 12px;
+    border: 1px solid #b9afa3;
+    border-radius: 4px;
+}
+
+/* Monthly calendar */
+
+.month {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.month h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #4e1717;
+    font-size: 24px;
+}
+
+.month table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.month th,
+.month td {
+    width: 14.28%;
+    padding: 12px 6px;
+    border: 1px solid #d5cec4;
+    text-align: center;
+}
+
+.month th {
+    color: white;
+    background-color: #4e1717;
+}
+
+.month td {
+    background-color: #fffdf8;
+}
+
+/* Clickable calendar events */
+
+.event1,
+.event2,
+.event3,
+.event4 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.event1 {
+    background-color: #dbeafb !important;
+}
+
+.event2 {
+    background-color: #f7d7d7 !important;
+}
+
+.event3 {
+    background-color: #f8e7b5 !important;
+}
+
+.event4 {
+    background-color: #e0efdc !important;
+}
+
+.event1:hover,
+.event2:hover,
+.event3:hover,
+.event4:hover {
+    filter: brightness(0.94);
+}
+
+/* Event cards container */
+
+.event-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+/* Event card */
+
+.event {
+    width: 100%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white !important;
+    border: 1px solid #d6c9b9;
+    border-left: 8px solid #721c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Remove all old colour backgrounds */
+
+.event.blue,
+.event.red,
+.event.green,
+.event.yellow,
+.event.gold,
+.event.orange {
+    background-color: white !important;
+    border-top: none !important;
+}
+
+.event.blue {
+    border-left-color: #1e5f99;
+}
+
+.event.red {
+    border-left-color: #b52a2a;
+}
+
+.event.green {
+    border-left-color: #428542;
+}
+
+.event.yellow {
+    border-left-color: #d49b12;
+}
+
+/* Event table */
+
+.event table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #333333;
+}
+
+.event th,
+.event td {
+    padding: 12px 15px;
+    border: 1px solid #d9d1c7;
+    text-align: left;
+}
+
+.event tr:first-child th {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: #4e1717;
+    font-size: 20px;
+}
+
+.event tr:last-child th {
+    padding: 14px;
+    text-align: center;
+    color: #4e1717;
+    background-color: #f8f4ec;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .calendar-container,
+    .month,
+    .event-container {
+        width: 94%;
+    }
+
+    .month {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .month table {
+        min-width: 650px;
+    }
+
+    .event {
+        padding: 12px;
+    }
+
+    .event th,
+    .event td {
+        padding: 9px;
+        font-size: 14px;
+    }
+}

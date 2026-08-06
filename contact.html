@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="contact.css">
+   
 </head>
 <style>
     b{
@@ -15,7 +17,21 @@
     }
     </style>
 <body>
-    <a href="index.html" class="home-link">&#10094; Home</a>
+    
+    <div id="navbar"></div>
+    <section class="map">
+    <h2>Our Location</h2>
+<img src="images/image2.jpg" alt="Contact Us Image" class="contact-image">
+    <iframe
+        src="https://www.google.com/maps?q=Asia%20Pacific%20University%20of%20Technology%20%26%20Innovation&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+
 <p><b>Please Contact Us If You Have Any Questions</b></p>
     <p>
      <span class="icon">✉</span>
@@ -37,6 +53,14 @@
         <span class="icon">📱</span>
         Facebook: APU Go Karting Club
     </p >
-    <a href="index.html">Home Page</a>
+    <a href="index.html" class="home-btn">Back to Home</a>
+
+    <script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
+</script>
 </body>
 </html>

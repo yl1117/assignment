@@ -5,50 +5,1086 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
 
+    <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-     <p><a href="index.html" class="home-link">&#10094; Home</a></p>
+<body> 
+     
+     <div id="navbar"></div>
+     <div class="calendar-container">
+    <h2>Events Calendar</h2>
+    <p>Check out our upcoming events and activities below.</p>
+    <br>
+
+<label>Select Month:</label>
+<select onchange="jumpMonth(this.value)">
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="march">March</option>
+    <option value="april">April</option>
+    <option value="may">May</option>
+    <option value="june">June</option>
+    <option value="july">July</option>
+    <option value="august">August</option>
+    <option value="september">September</option>
+    <option value="october">October</option>
+    <option value="november">November</option>
+    <option value="december">December</option>
+</select>
+</div>
+<br>
+
+<div id="january" class="month">
+    <h3>January 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    3
+    </td>
+    <td>4</td>
+    </tr>
+
+    <tr>
+    <td>5</td>
+    <td>6</td> 
+    <td>7</td>
+    <td>8</td>
+    <td>9</td> 
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    10
+    </td>
+    <td>11</td>
+    </tr>
+
+    <tr>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    17
+    </td>
+    <td>18</td>
+    </tr>
+
+    <tr>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    24
+    </td>
+    <td>25</td>
+    </tr>
+
+    <tr>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    31
+    </td>
+    </tr>
+</table>
+</div>
+
+<div id="february" class="month">
+    <h3>February 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    </tr>
+
+    <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00  PM','APU Go-Karting Track')">7</td>
+    <td>8</td>
+    </tr>
+
+    <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    14
+    </td>
+    <td>15</td>
+    </tr>
+
+    <tr>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    21
+    </td>
+    <td>22</td>
+    </tr>
+
+    <tr>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    28
+    </td>
+</table>
+</div>
+
+<div id="march" class="month">
+    <h3>March 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    </tr>
+
+    <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    7
+    </td>
+    <td class="event4 safety workshop"
+    onclick="showEvent('Karting Safety Workshop','12:00 PM-3:00 PM','APU Auditorium 5')">
+    8
+    </td>
+    </tr>
+
+    <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    14
+    </td>
+    <td>15</td>
+    </tr>
+
+    <tr>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    21
+    </td>
+    <td>22</td>
+    </tr>
+
+    <tr>
+    <td class="event2 competition per sem"
+    onclick="showEvent('Karting Competition Per Semester','12:00 PM-4:00 PM','APU Go-Karting Track')">
+    23
+    </td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    28
+    </td>
+    <td>29</td>
+    </tr>
+
+    <tr>
+    <td>30</td>
+    <td>31</td>
+    </tr>
+</table>
+</div>
+
+<div id="april" class="month">
+    <h3>April 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    4
+    </td>
+    <td>5</td>
+    </tr>
+
+    <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    11
+    </td>
+    <td>12</td>
+    </tr>
+
+    <tr>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    18
+    </td>
+    <td>19</td>
+    </tr>
+
+    <tr>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    25
+    </td>
+    <td>26</td>
+    </tr>
+
+    <tr>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    </tr>
+</table>
+</div>
+
+<div id="may" class="month">
+    <h3>May 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    2
+    </td>
+    <td>3</td>
+    </tr>
+
+    <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    9
+    </td>
+    <td>10</td>
+    </tr>
+
+    <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    16
+    </td>
+    <td>17</td>
+    </tr>
+
+    <tr>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    23
+    </td>
+    <td>24</td>
+    </tr>
+
+    <tr>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    30
+    </td>
+    <td>31</td>
+    </tr>
+</table>
+</div>
+
+<div id="june" class="month">
+    <h3>June 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    6
+    </td>
+    <td>7</td>
+    </tr>
+
+    <tr>
+    <td class="event4 safety workshop"
+    onclick="showEvent('Karting Safety Workshop','12:00 PM-3:00 PM','APU Auditorium 5')">
+    8
+    </td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    13
+    </td>
+    <td>14</td>
+    </tr>
+
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    20
+    </td>
+    <td>21</td>
+    </tr>
+
+    <tr>
+    <td>22</td>
+    <td class="event2 competition per sem"
+    onclick="showEvent('Karting Competition Per Semester','12:00 PM-4:00 PM','APU Go-Karting Track')">
+    23
+    </td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    27
+    </td>
+    <td>28</td>
+    </tr>
+
+    <tr>
+    <td>29</td>
+    <td>30</td>
+    </tr>
+</table>
+</div>
+
+<div id="july" class="month">
+    <h3>July 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    4
+    </td>
+    <td>5</td>
+    </tr>
+
+    <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    11
+    </td>
+    <td>12</td>
+    </tr>
+
+    <tr>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    18
+    </td>
+    <td>19</td>
+    </tr>
+
+    <tr>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    25
+    </td>
+    <td>26</td>
+    </tr>
+
+    <tr>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td>31</td>
+    </tr>
+</table>
+</div>
+
+<div id="august" class="month">
+    <h3>August 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    1
+    </td>
+    <td>2</td>
+    </tr>
+
+    <tr>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    8
+    </td>
+    <td>9</td>
+    </tr>
+
+    <tr>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    15
+    </td>
+    <td>16</td>
+    </tr>
+
+    <tr>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    22
+    </td>
+    <td>23</td>
+    </tr>
+
+    <tr>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">29</td>
+    <td>30</td>
+    </tr>
+
+    <tr>
+    <td>31</td>
+    </tr>
+</table>
+</div>
+
+<div id="september" class="month">
+    <h3>September 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    5
+    </td>
+    <td>6</td>
+    </tr>
+
+    <tr>
+    <td>7</td>
+    <td class="event4 safety workshop"
+    onclick="showEvent('Karting Safety Workshop','12:00 PM-3:00 PM','APU Auditorium 5')">
+    8
+    </td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    12
+    </td>
+    <td>13</td>
+    </tr>
+
+    <tr>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    19
+    </td>
+    <td>20</td>
+    </tr>
+
+    <tr>
+    <td>21</td>
+    <td>22</td>
+    <td class="event2 competition per sem"
+    onclick="showEvent('Karting Competition Per Semester','12:00 PM-4:00 PM','APU Go-Karting Track')">
+    23
+    </td>
+    <td>24</td>
+    <td>25</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    26
+    </td>
+    <td>27</td>
+    </tr>
+
+    <tr>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    </tr>
+</table>
+</div>
+
+
+<div id="october" class="month">
+    <h3>October 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    5
+    </td>
+    <td>6</td>
+    </tr>
+
+    <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    12
+    </td>
+    <td>13</td>
+    </tr>
+
+    <tr>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    19
+    </td>
+    <td>20</td>
+    </tr>
+
+    <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    26
+    </td>
+    <td>27</td>
+    </tr>
+
+    <tr>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    31
+    </tr>
+</table>
+</div>
+<div id="november" class="month">
+    <h3>November 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    </td>
+    <td>1</td>
+    </tr>
+
+    <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    7
+    </td>
+    <td>8</td>
+    </tr>
+
+    <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    14
+    </td>
+    <td>15</td>
+    </tr>
+
+    <tr>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    21
+    </td>
+    <td>22</td>
+    </tr>
+
+    <tr>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    28
+    </td>
+    <td>29</td>
+    </tr>
+
+    <tr>
+    <td>30</td>
+    </tr>
+</table>
+</div>
+
+<div id="december" class="month">
+    <h3>December 2026</h3>
+
+<table>
+    <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    5
+    </td>
+    <td>6</td>
+    </tr>
+
+    <tr>
+    <td>7</td>
+    <td class="event4 safety workshop"
+    onclick="showEvent('Karting Safety Workshop','12:00 PM-3:00 PM','APU Auditorium 5')">
+    8
+    </td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    12
+    </td>
+    <td>13</td>
+    </tr>
+
+    <tr>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    19
+    </td>
+    <td>20</td>
+    </tr>
+
+    <tr>
+    <td>21</td>
+    <td>22</td>
+    <td class="event2 competition per sem"
+    onclick="showEvent('Karting Competition Per Semester','12:00 PM-4:00 PM','APU Go-Karting Track')">
+    23
+    </td>
+    <td>24</td>
+    <td>25</td>
+    <td class="event1 meeting"
+    onclick="showEvent('Weekly Karting Practice','2:00 PM-4:00 PM','APU Go-Karting Track')">
+    26
+    </td>
+    <td>27</td>
+    </tr>
+
+    <tr>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td class="event3 championship"
+    onclick="showEvent('Annual Go-Karting Championship','12:00 PM-6:00 PM','APU Go-Karting Track')">
+    31</td>
+    </tr>
+</table>
+</div>
+<br>
+
+<div class="event-container">
 <div class="event blue">
-    <h2>Weekly Karting Practice</h2>
-    <p> 📅Date: Every Saturday </p>
-    <p> 🕒Time: 2:00 PM - 4:00 PM</p> 
-    <p> 📍Location: APU Go-Karting Track</p>
-    <p> 📝Weekly training session for all members</p>
+<table border width=470 height=100>
+    <tr><th colspan=5>Weekly Karting Practise</th>
+    <tr><th>📅Date:</th><td>Every Saturday</td></tr>
+    <tr><th>🕒Time:</th><td>2:00 PM - 4:00 PM</td></tr>
+    <tr><th>📍Location:</th><td> APU Go-Karting Track</td> </tr>
+    <tr><th colspan=5>📝Weekly training session for all members</th></tr>
+</table>
 </div>
 <br>
 <br>
 
-    <div class="event red">
-        <h2>Karting Competition Per Semester</h2>
-        <p> 📅Date: 23th of each month </p>
-        <p> 🕒Time: 12:00 PM - 4:00 PM</p>
-        <p> 📍Location: APU Go-Karting Track</p>
-        <p> 📝Friendly race with prizes</p>
-    </div>
+<div class="event red">
+<table>
+    <tr><th colspan=5>Weekly Karting Practise</th>
+    <tr><th>📅Date:</th><td> 23th of each sem</td></tr>
+    <tr><th>🕒Time:</th><td> 12:00 PM - 4:00 PM</td></tr>
+    <tr><th>📍Location:</th><td>APU Go-Karting Track</td> </tr>
+    <tr><th colspan=5>📝Friendly race with prizes</th></tr>
+</table>
+</div>
+<br>
+<br>
+</div>
 <br>
 <br>
 
-    <div class="event gold">
-        <h2>Annual Go-Karting Championship</h2>
-        <p> 📅Date: 31th of December </p>
-        <p> 🕒Time: 12:00 PM - 6:00 PM</p>
-        <p> 📍Location: APU Go-Karting Track</p>
-        <p> 📝Exciting championship event with awards and recognition</p>
-    </div>
+<div class="event-container">
+<div class="event green">
+<table border width=470 height=100>
+    <tr><th colspan=5>Weekly Karting Practise</th>
+    <tr><th>📅Date:</th><td>31th of December</td></tr>
+    <tr><th>🕒Time:</th><td>12:00 PM - 6:00 PM</td></tr>
+    <tr><th>📍Location:</th><td>APU Go-Karting Track</td> </tr>
+    <tr><th colspan=5>📝Exciting championship event with awards and recognition</th></tr>
+</table>
+</div>
 <br>
 <br>
 
-    <div class="event orange">
-        <h2>Karting Safety Workshop</h2>
-        <p> 📅Date: 8th of each semester </p>
-        <p> 🕒Time: 12:00 PM - 3:00 PM</p>
-        <p> 📍Location: APU Auditorium 5</p>
-        <p> 📝Learn about karting safety rules.</p>
-    </div>
+<div class="event yellow">
+<table border width=470 height=100>
+    <tr><th colspan=5>Weekly Karting Practise</th>
+    <tr><th>📅Date:</th><td>8th of each semester</td></tr>
+    <tr><th>🕒Time:</th><td>12:00 PM - 3:00 PM</td></tr>
+    <tr><th>📍Location:</th><td>APU Auditorium 5</td> </tr>
+    <tr><th colspan=5>📝Learn about karting safety rules</th></tr>
+</table>
+</div>
 <br>
 <br>
- <a href="index.html">Home Page</a>
+</div>
+<br>
+<br>
+<script>
+function jumpMonth(month){
+
+    var months = document.getElementsByClassName("month");
+
+    for(var i = 0; i < months.length; i++){
+        months[i].style.display = "none";
+    }
+
+    document.getElementById(month).style.display = "block";
+}
+
+window.onload = function(){
+    jumpMonth("january");
+}
+
+function showEvent(event, time, venue){
+
+    document.getElementById("eventBox").innerHTML =
+    "<h2>Event Details</h2>" +
+    "<p><b>Event:</b> " + event + "</p>" +
+    "<p><b>Time:</b> " + time + "</p>" +
+    "<p><b>Venue:</b> " + venue + "</p>";
+}
+</script>
+
+<script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data=>{
+    document.getElementById("navbar").innerHTML=data;
+});
+</script>
+
 </body>
 </html>

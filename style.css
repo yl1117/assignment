@@ -1,3 +1,12 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,Helvetica,sans-serif;background-color:#f4f4f4;color:#333;line-height:1.6;
+}
+h1, h2{
+    text-align: center;
+}
+/* Homepage */
 .nav-links {
     display: flex;
     list-style-type: none;
@@ -26,7 +35,7 @@
 
 
 .hero {
-    display: flex;
+    display:flex ;
     justify-content: center;
     align-items: center;
     height: 40vh;
@@ -112,9 +121,11 @@
     cursor: pointer;
 }
 .home-link:hover {
-    color: #4e1717;
+    color: black;
+    background-color: #4e17178f
+    ;
 }
-ABOUT US
+/*ABOUT US*/
 .card { 
     border: 3px solid black; 
     padding: 25px; 
@@ -187,52 +198,55 @@ ABOUT US
     font-size: 18px;
     line-height: 1.8;
 }
-FEEDBACK
-input[type="button"]{
-    padding: 12px 25px;
-    font-size:18px;
+
+/*Gallery*/
+.video-section{
+    text-align:center;
+    padding:50px 20px;
 }
 
-EVENTS
-.event{
-    border-radius: 5px;
-    padding: 20px;
-    color: white;
-}
-.event,
-.event p,
-.event h2 {
-    color: white;
+.video-container{
+    max-width:800px;
+    margin:0 auto 30px;
 }
 
-.blue{
-    background-color: #1e3a8a;
-}
-.red{
-    background-color: #b91c1c;
-}
-.gold{
-    background-color: #ca8a04;
-}
-.orange{
-    background-color: #ea580c;
+.video-section iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
 }
 
-h1, h2{
-    text-align: center;
-}
-.blue {
-    border-left: 10px solid #1e3a8a;
+.photo-gallery{
+    text-align:center;
+    padding:50px 20px;
 }
 
-.red {
-    border-left: 10px solid #b91c1c;
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    max-width:1000px;
+    margin:30px auto;
 }
 
-.gold {
-    border-left: 10px solid #ca8a04;
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
 }
 
-.orange {
-    border-left: 10px solid #ea580c;
+.gallery-grid img:hover{
+    transform:scale(1.05);
 }
+
+
+
+
+
+

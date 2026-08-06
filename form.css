@@ -1,0 +1,99 @@
+.form-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+
+h2 {
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+
+p {
+    text-align: center !important;
+    margin-bottom: 16px !important;
+}
+
+label {
+    display: block !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    margin-bottom: 5px !important;
+    font-weight: bold !important;
+}
+
+input,
+select,
+textarea {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+    resize: vertical !important;
+}
+
+input[type="button"] {
+    width: auto !important;
+    padding: 10px 25px !important;
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+input[type="radio"] {
+    margin-right: 5px !important;
+    width: auto !important;
+    vertical-align: middle !important;
+}
+
+input[type="checkbox"] {
+    margin: 0 5px 10px 0 !important;
+    display: inline-block !important;
+    width: auto !important;
+    vertical-align: middle !important;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin-bottom: 10px !important;
+}
+
+input[type="button"]:hover {
+    background-color: #0d4a78 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+    border-color: #115f99 !important;
+    box-shadow: 0 0 5px rgba(17, 95, 153, 0.5) !important;
+}
+
+body{
+    background-color: #f5f9fc !important;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px !important;
+        width: 90% !important;
+    }
+}

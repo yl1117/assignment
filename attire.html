@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New and Media</title>
+    <link rel="stylesheet" href="contact.css".css">
+    <section class="equipment">
+    <div id="navbar"></div>
+    <h1>Required Attire and Equipment</h1>
+
+    <p class="intro">
+        For the safety of all members, participants must wear appropriate clothing
+        and use the required safety equipment before entering the karting track.
+    </p>
+    <img src="images/karting-equipment.webp" alt="Karting Equipment" class="equipment-img">
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Requirement</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>🪖 Helmet</td>
+            <td>Required</td>
+            <td>A certified helmet must be worn at all times while driving. Helmets are usually provided by the karting track.</td>
+        </tr>
+
+        <tr>
+            <td>👕 Comfortable Shirt</td>
+            <td>Required</td>
+            <td>Wear a comfortable T-shirt or long-sleeved shirt that allows free movement.</td>
+        </tr>
+
+        <tr>
+            <td>👖 Long Pants</td>
+            <td>Required</td>
+            <td>Long pants help protect the legs from heat and minor scratches.</td>
+        </tr>
+
+        <tr>
+            <td>👟 Closed-Toe Shoes</td>
+            <td>Required</td>
+            <td>Sports shoes or sneakers must be worn. Slippers and sandals are not allowed.</td>
+        </tr>
+
+        <tr>
+            <td>🧤 Racing Gloves</td>
+            <td>Recommended</td>
+            <td>Improve steering wheel grip and provide extra comfort while driving.</td>
+        </tr>
+
+        <tr>
+            <td>🏁 Racing Suit</td>
+            <td>Competition Only</td>
+            <td>Required during official karting competitions for additional protection.</td>
+        </tr>
+    </table>
+
+    <h2>Safety Reminder</h2>
+
+    <ul>
+        <li>Always fasten your helmet securely before entering the track.</li>
+        <li>Follow all instructions given by race marshals and instructors.</li>
+        <li>Do not wear loose clothing, scarves, or dangling accessories.</li>
+        <li>Tie up long hair before putting on the helmet.</li>
+        <li>Report any damaged equipment before the race begins.</li>
+    </ul>
+
+</section>
+<a href="index.html" class="home-btn">Back to Home Page</a>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+</script>
+</body>
+</html>

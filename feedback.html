@@ -5,38 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
 
-    <link rel="stylesheet" href="style.css">
-
-<style>
-    b{
-        font-size: 50px;
-    }
-    </style>
-
+    <link rel="stylesheet" href="contact.css">
 </head>
-<body>
-    <b>Feedback</b>
-<form action=/cgi-bin/post-query=POST>
-<textarea name=comment rows=25 cols=50>
-</textarea>
-<br>
-<br>
 
-<input type="button" value="Submit" onclick="submitForm()">
-    <input type="button" value="Reset" onclick="resetForm()">
-    
-</form>
+<body>
+
+<div id="navbar"></div>
+
+<div class="feedback-container">
+
+    <h1>Feedback</h1>
+
+    <p>Please share your feedback with us. Your comments will help us improve the APU Go Karting Club website.</p>
+
+    <form>
+
+        <textarea placeholder="Write your feedback here..."></textarea>
+
+        <br><br>
+
+        <input type="button" value="Submit" onclick="submitForm()">
+
+        <input type="button" value="Reset" onclick="resetForm()">
+
+    </form>
+
 </div>
 
 <script>
-function submitForm() {
+fetch("navbar.html")
+.then(response => response.text())
+.then(data=>{
+    document.getElementById("navbar").innerHTML=data;
+});
+
+function submitForm(){
     alert("Thank you for your feedback!");
-    window.location.href = "index.html";
+    window.location.href="index.html";
 }
 
-function resetForm() {
-    window.location.href = "feedback.html";
+function resetForm(){
+    window.location.href="feedback.html";
 }
 </script>
+
 </body>
 </html>

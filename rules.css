@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+
+.rules-hero{
+    text-align:center;
+    margin-top:20px;
+}
+
+.rules-hero img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.rules-hero h1{
+    color:#4e1717;
+    margin-top:20px;
+}
+
+.rules-hero p{
+    margin-bottom:20px;
+}
+
+
+.card{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+}
+
+.card h2{
+    color:#4e1717;
+    text-align:center;
+    border-bottom:2px solid #4e1717;
+    padding-bottom:8px;
+}
+
+.card img{
+    width:55%;
+    display:block;
+    margin:20px auto;
+}
+
+ul li{
+    margin:10px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,
+th,
+td{
+    border:1px solid black;
+}
+
+th{
+    background:#4e1717;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+footer{
+    background:#4e1717;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+.rules-title{
+    text-align:center;
+    margin:25px 0;
+}
+
+.rules-title h1{
+    color:#4e1717;
+    margin-bottom:10px;
+}
+
+.rules-title p{
+    color:#555;
+    font-size:18px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #c9bcbc;
+    font-size: 18px;
+}
+.navbar {
+    display: flex;
+    background-color: #461010;
+    padding: 12px 50px ;
+    gap: 50px;
+}
+.logo {
+    display: block;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+}
